@@ -1,7 +1,7 @@
 <html>
   <head>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
+    <!--  <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.js"></script> -->
     <script type="text/javascript">
     const config = {
       'www_redirect': false, // redirects to www. if we're not there
@@ -11,6 +11,13 @@
     if (config.www_redirect && window.location.host.slice(0, 4) !== 'www.') {
       window.location = window.location.protocol + '//' + 'www.'+ window.location.host + window.location.pathname + window.location.search + window.location.hash;
     }
+
+    function writeError() {
+      document.open('text/html');
+      document.write('Could not load page from IPFS');
+      document.close();
+    }
+
     const ipfs = new window.Ipfs({ repo: 'ipfs-' + Math.random() });
     ipfs.on('ready', async () => {
       let domain;
@@ -21,8 +28,9 @@
       }
 
       // const ipfsPath  = '/ipns/'+domain;
-      const ipfsPath = '/ipfs/Qmd34hbtFqzfdten6aYpB4n42W4TmgECNSNA14gxenRjDP';
-      console.log(ipfsPath);
+      // Overiding to get around ipns problems
+      const ipfsPath = '/ipfs/Qmd34hbtFqzfdten6aYpB4n42W4TmgECNSNA14gxenRjDP/index.html';
+      console.log(`IPFS Path: ${ipfsPath}`);
       ipfs.files.get(ipfsPath, {pubsub: true}).then(async function(files, errors) {
         const newHtml = files[0].content.toString('utf8');
         document.open('text/html');
@@ -31,11 +39,14 @@
         try {
           await ipfs.stop();
           console.log('Node stopped!');
+          writeError();
         } catch (error) {
           console.error('Node failed to stop cleanly!', error);
+          writeError();
         }
       }).catch(function(err) {
         console.log(err);
+        writeError();
       });
     });
     </script>
