@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.js"></script>
+    <script type="text/javascript">
+    const config = {
+      'www_redirect': false, // redirects to www. if we're not there
+    };
+
+    console.log(window.location.host.slice(0, 4) !== 'www.');
+    if (config.www_redirect && window.location.host.slice(0, 4) !== 'www.') {
+      window.location = window.location.protocol + '//' + 'www.'+ window.location.host + window.location.pathname + window.location.search + window.location.hash;
+    }
+    const ipfs = new window.Ipfs({ repo: 'ipfs-' + Math.random() });
+    ipfs.on('ready', async () => {
+      let domain;
+      if (config.domain) {
+        domain = config.domain;
+      } else {
+        domain = window.location.host;
+      }
+
+      // const ipfsPath  = '/ipns/'+domain;
+      const ipfsPath = '/ipfs/Qmd34hbtFqzfdten6aYpB4n42W4TmgECNSNA14gxenRjDP';
+      console.log(ipfsPath);
+      ipfs.files.get(ipfsPath, {pubsub: true}).then(async function(files, errors) {
+        const newHtml = files[0].content.toString('utf8');
+        document.open('text/html');
+        document.write(newHtml);
+        document.close();
+        try {
+          await ipfs.stop();
+          console.log('Node stopped!');
+        } catch (error) {
+          console.error('Node failed to stop cleanly!', error);
+        }
+      }).catch(function(err) {
+        console.log(err);
+      });
+    });
+    </script>
+  </head>
+<body>
+<img src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/images/loader-large.gif" />
+</body>
+</html>
