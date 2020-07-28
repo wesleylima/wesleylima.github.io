@@ -1,57 +1,13 @@
 <html>
   <head>
-    <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
-    <!--  <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.js"></script> -->
-    <script type="text/javascript">
-    const config = {
-      'www_redirect': false, // redirects to www. if we're not there
-    };
-
-    console.log(window.location.host.slice(0, 4) !== 'www.');
-    if (config.www_redirect && window.location.host.slice(0, 4) !== 'www.') {
-      window.location = window.location.protocol + '//' + 'www.'+ window.location.host + window.location.pathname + window.location.search + window.location.hash;
-    }
-
-    function writeError() {
-      document.open('text/html');
-      document.write('Could not load page from IPFS');
-      document.close();
-    }
-
-    const ipfs = new window.Ipfs({ repo: 'ipfs-' + Math.random() });
-    ipfs.on('ready', async () => {
-      let domain;
-      if (config.domain) {
-        domain = config.domain;
-      } else {
-        domain = window.location.host;
-      }
-
-      // const ipfsPath  = '/ipns/'+domain;
-      // Overiding to get around ipns problems
-      const ipfsPath = '/ipfs/Qmd34hbtFqzfdten6aYpB4n42W4TmgECNSNA14gxenRjDP/index.html';
-      console.log(`IPFS Path: ${ipfsPath}`);
-      ipfs.files.get(ipfsPath, {pubsub: true}).then(async function(files, errors) {
-        const newHtml = files[0].content.toString('utf8');
-        document.open('text/html');
-        document.write(newHtml);
-        document.close();
-        try {
-          await ipfs.stop();
-          console.log('Node stopped!');
-          writeError();
-        } catch (error) {
-          console.error('Node failed to stop cleanly!', error);
-          writeError();
-        }
-      }).catch(function(err) {
-        console.log(err);
-        writeError();
-      });
-    });
-    </script>
+    <title>Wesley Lima</title>
   </head>
 <body>
-<img src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.16.1/images/loader-large.gif" />
+<h1>Wesley Lima</h1>
+<p>I'm an Engineer interesting in distributed system and other cutting edge computer technologies.</p>
+<p>Check out my <a href="https://www.linkedin.com/in/wesleyblima/">LinkedIn</a> profile for an overview of my professional experience. If you want to connect, mention you came from my website and I'll add you back!</p>
+<p>Take a look at some some of my code on GitHub <a href="https://github.com/wesleylima">https://github.com/wesleylima</a></p>
+<p>Email me <a href="mailto:wesley@wesleylima.com">wesley@wesleylima.com</a></p>
+<p>...and check back soon for the hottest takes in Florida</p>
 </body>
 </html>
