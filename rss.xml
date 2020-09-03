@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Wesley Lima]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://www.wesleylima.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 03 Sep 2020 14:21:46 GMT</lastBuildDate><item><title><![CDATA[Digital Goods]]></title><description><![CDATA[Blockchain is often critized as a solution in search of a problem So here’s an idea for a “blockchain” application that would be useful: The…]]></description><link>https://www.wesleylima.com/digital-goods/</link><guid isPermaLink="false">https://www.wesleylima.com/digital-goods/</guid><pubDate>Thu, 27 Aug 2020 12:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Blockchain is often critized as a &lt;a href=&quot;https://thecorrespondent.com/655/blockchain-the-amazing-solution-for-almost-nothing/84495599980-95473476&quot;&gt;solution in search of a problem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;So here’s an idea for a “blockchain” application that would be useful:&lt;/p&gt;
+&lt;h2&gt;The Hypothetical P2P MMO&lt;/h2&gt;
+&lt;p&gt;Suppose there’s a decentralized MMO game/world:&lt;/p&gt;
+&lt;p&gt;And in that world, in-game objects—character appearances, etc—are created by “peers”. Items are not subject to distribution or validation from a central authority.&lt;/p&gt;
+&lt;p&gt;How could these “peer-created” objects be monetized by their creators?&lt;/p&gt;
+&lt;p&gt;A creator could “mint” a limited number of copies of his or her digital object. Then sell the digital item to players as a digital “token”.&lt;/p&gt;
+&lt;p&gt;This serves as a form of DRM. But is inherentiy flawd—it tries to restrict access from its intended recipient. It’s especially daunting to consider how it’d be enforced in a P2P system.&lt;/p&gt;
+&lt;p&gt;The actual data that compose a 3D are not “encrypted”. Only the fact that a user authentically has the right to use said item is enforced by the blockchain. The associating between the data of the asset and the token expressing its ownership is done through &lt;a href=&quot;https://en.wikipedia.org/wiki/Code_signing&quot;&gt;code signing&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;But what incentives do players have to this digital ownership? Can’t they just “hack” their game clients to not verify ownership of digital assets?&lt;/p&gt;
+&lt;p&gt;The “hacked” client of the person doing the counterfeiting would be unobstructed by the “DRM”.
+But it’s a different story for other players in the online world.&lt;/p&gt;
+&lt;p&gt;Since expression or exhibition of some kind of status is the main motivator for these digital items, players would be incentivized to use game clients that check the authenticity of other player’s in-game items. Nobody likes a faker.
+For example, if you encountered a player wearing boots that did pass an ownership check, you’d see a “mark of shame” missing texture instead of the desired appearance of the boots.
+Note that whatever mark of “forgery” can’t fundamentally “break” the game. This is to ensure there is no incentive to use a game client that tolerates forgeries. The pressures and incentives should be purely social.&lt;/p&gt;
+&lt;p&gt;This strategy is especially effective for “cosmetic” objects — things that don’t grant the player any extra utility or ability. A player would wield such items purely for expressive reasons (skill, wealth, etc.)&lt;/p&gt;
+&lt;p&gt;but they would not have any social benefit from showing off their counterfeit goods.&lt;/p&gt;
+&lt;p&gt;How do we prevent “quick lending” of digital goods? Slow blockchain transaction times in this application serve as a feature rather than a flaw.&lt;/p&gt;
+&lt;h2&gt;Why a blockchain though?&lt;/h2&gt;
+&lt;p&gt;Couldn’t each creator simply keep a ledger of who bought the digital good? Then each client would check the author’s ledger for authenticity?&lt;/p&gt;
+&lt;p&gt;If the intent is for a digital good to not be re-sold (like sadly most DRM’d digital goods are treated today) then this would be a sufficient solution&lt;/p&gt;
+&lt;p&gt;However, if you want to consumers to have the ability to re-sell what they bought and own, then a blockchain starts making sense. You don’t have to rely on the original creator to keep tabs of your business transactions. The supply of the digital good is known.&lt;/p&gt;
+&lt;p&gt;It also
+Rarity
+True Digital good&lt;/p&gt;
+&lt;h2&gt;Collectability factor beyond the in-game appearance.&lt;/h2&gt;
+&lt;p&gt;For instance, an author creates a t-shirt and issues 10 ownership tokens. It turns out the shirts are really popular so she issues 100 more. Then 1000, then 100000.
+If you were an owner of the first series of 10 tokens, that might have so collectible value
+(I liked them while they were still underground)&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Own Your Reality]]></title><description><![CDATA[What is AR AR is the penultimate computing interface. It’s an advancement so profound it will only be superceded by a direct mind machine…]]></description><link>https://www.wesleylima.com/own-your-reality/</link><guid isPermaLink="false">https://www.wesleylima.com/own-your-reality/</guid><pubDate>Tue, 01 May 2018 12:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is AR&lt;/h2&gt;
+&lt;p&gt;AR is the penultimate computing interface. It’s an advancement so profound it will only be superceded by a direct mind machine interface.&lt;/p&gt;
+&lt;p&gt;While it won’t be the last medium—direct mind-machine interfaces are the apex—the leap from smartphones to AR will be the most disruptive and revolutionary ever. It fully replace every medium before it. And it will deeply, literally and irreversibly change the nature of reality itself.&lt;/p&gt;
+&lt;p&gt;Every medium since we first created media has been exploited to influence behavior and warp perception in ways that benefit the medium”owner” with no regard —and often to the detriment — of the target. This is really just a cute way of saying advertisement and propaganda (the same word in Portuguese). I will call it all propaganda.
+As the medium becomes more sophisticated so does the power of propaganda to shape behavior. We know it works because people spend money on it.&lt;/p&gt;
+&lt;p&gt;Devices become extensions of our selves. This reaches an apex with AR.&lt;/p&gt;
+&lt;p&gt;Smartphones already alter human behavior. AR can alter human behavior more powerfully than smartphones by at least a factor of 10
+Literally shaping your paradigm at a whim&lt;/p&gt;
+&lt;p&gt;Software on AR computers must BELONG to the user or else we will become slaves to the true owners&lt;/p&gt;
+&lt;h1&gt;Current State&lt;/h1&gt;
+&lt;p&gt;Palm Pilot - 1997
+iPhone - 2007&lt;/p&gt;</content:encoded></item></channel></rss>
