@@ -36,7 +36,7 @@ No. It absolutely is not like firebase. The provided API is very obtuse and poor
 
 Gun also has no real ACL layer. Their official soultion is to encrypt objects using their "SEA" security library. Except that by doing that, you either have to use their very clunky Gun user system, or roll your own access control in your application.
 
-Out of the box--no matter what they claim-- gundoesn't support selectively sharing user data. With gun either something is public to all, or accessible only to the user that created it. _This is not stated in the documentation_.
+Out of the box--no matter what they claim-- Gun doesn't support selectively sharing user data. With gun either something is public to all, or accessible only to the user that created it. _This is not stated in the documentation_.
 
 Newcomers often ask: "Can gun do _x_?" And the Gun answer is without exception: "Yes". They do leave out the part where it's not actually Gun that's doing "x". It's you that are going to have to write that feature on top of Gun.
 
@@ -191,7 +191,7 @@ Not only do I not think they can implement their ecosystem, I'm saying they shou
 See "Free Software Isn't Free".
 No successful, sustainable FOSS project runs off vounteerism only. I believe there are only two full time developers working for Gun. And of those two, one is the founder who splits his development time with CEO duties, community management, sales and evangelism. This is obviously not sustainable. _Especially_ with a developer-unfriendy codebase as Gun's
 
-Even basic conventions on how to implement private groups hasn't been established. They're still "waiting on the community" to provide a solutionl.
+Even basic conventions like how to implement private groups hasn't been established. They're still "waiting on the community" to provide a solution.
 
 
 ### Documentation
@@ -209,7 +209,8 @@ There are better supported P2P ecosystems and platforms that will tell you the t
 
 ## Is Orbit Any Better?
 As a tool for creating real apps today? Not really. Neither is "production ready". But one of them lies to you and tells you it is.
-However, which one has the better chance at being a usable P2P database for real applications? No question Orbit.
+
+But if you were to ask: "which one has the better chance at being a usable P2P database for real applications?" No question Orbit.
 
 
 ### Apendix: Freeism and the Cult of Mark
