@@ -45,8 +45,8 @@
 <h3>Ease of Use</h3>
 <p>Gun people often explain the project as “an open source Firebase!”</p>
 <p>No. It absolutely is not like firebase. The provided API is very obtuse and poorly documented.</p>
-<p>Gun also has no real ACL layer. Their official soultion is to encrypt object using their “SEA” security library. Except that by doing that, you either have to use their very clunky Gun user system, or roll your own access control in your application.
-Out of the box—no matter what they claim— gundoesn’t support selectively sharing user data. With gun either something is public to all, or accessible only to the user that created it. <em>This is not stated in the documentation</em>.</p>
+<p>Gun also has no real ACL layer. Their official soultion is to encrypt objects using their “SEA” security library. Except that by doing that, you either have to use their very clunky Gun user system, or roll your own access control in your application.</p>
+<p>Out of the box—no matter what they claim— gundoesn’t support selectively sharing user data. With gun either something is public to all, or accessible only to the user that created it. <em>This is not stated in the documentation</em>.</p>
 <p>Newcomers often ask: “Can gun do <em>x</em>?” And the Gun answer is without exception: “Yes”. They do leave out the part where it’s not actually Gun that’s doing “x”. It’s you that are going to have to write that feature on top of Gun.</p>
 <p>Yes, you can write your own key sharing mechanism using their security library. But that’s <em>you</em> writing the ACL library, not Gun providing it.</p>
 <p>Also, now that you’re signing/verifying and encrypting/decrypting every node of data, the <em>ultra fast</em> advertised performance starts making your data load like it’s coming off a 2002 DSL connection.</p>
@@ -109,9 +109,69 @@ arbitrarily is nowhere prominent in the documentation.</p>
 <p>The only part that of Gun is somewhat comprehensible is the SEA security library. This is probably because it was <em>not</em> written by the main Gun author in large part.</p>
 <h3>Bus Factor=1</h3>
 <p>Speaking of code: while the Gun community is pretty vibrant, there aren’t many contributors to the actual Gun code itself.</p>
-<p><img src="./gun-authors.png" alt="Pie chart showing contributions to Gun by Author. Mark Nadal leads at 64.12%. The next highest contributor with 6.25%"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/58d921ce07d920f47f8a00d77fdefd24/0f67e/gun-authors.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADIUlEQVQoz12S+0tTYRjHD5G7vmdzZ1N31W1uZ/Ocs2lqg8xCCAoqSjGbl+1sbjPLacYqXSGZYipllv5SWFmiznLzTI+zmLqiIPqlC1hEBf3Y/9HjpYKe9+HwXvic7/t8nxfDNQgvQDKtVJSdK8Tz5YQ6L0+dQxA5KpVcJUcI4TAQkm6FRCKR/gnYxJAE4RJckIVsOqwtcGT0yuVzkSp3mK2oranKr8ySCEQSEfBavYEkycLCQqPRqNFosrOzgcdwHH4swlX6+53SXx8OfZmP3brj7klMRu9NrNc/76g6n6vIFYqFZrOJomiKoiwWi1ar3aIQJhDttmiL/NVddcddPxbQx3hveGjoyNCpkeiTVMNipjUzfGxYLlPo841OpxNg0DcYDDvXhrJqmh8ORt66D3cNdWq+Zzzxru66yd7ps3Hes5hgE+lQuqGsQaPTlO4ppWnaarWCMkEQm9cWlh+2jX09fWOjJ/KuozbwesL87XHo2v2bnIdP+jnOxy35+WdNsRLSbiuybyubzWalUrkJWw+4mL7rxEDCeftTXeTzyKW2maSvdaQv5Ulxfi7pSwKfak7VuWopJ1XsLAZxUFYoFJuwZx+xHlGP+/D2NldTNNzeMdEz1d4/PLlSv7QNL7CJ1dBqsILVm3U20g6y/wwLBkM/37/ZiA1uxHpfTHdHZ6Nd43emzszz7CLnS27BC+lg2lPpIR2kk3E6HI6CggK5XA49x7wtQe7rp/NvVipePSUyD9yj03NBfsm7Q27Dq8E0ezBgtJsYirbZbFA2tBo8w/CjlYL0XWzhGpobCF99lPJwvDf5l9xRDqXr97pNVpODcYBnYDiQMpkMkxIKbPyCnBvtvzidaeA5///kciA1Xj1WVEjSDqakpIRhGOB1Op1YLMbEgiwDXTwZ5la9qXk2Do39m3FvnG/mlwPL5cYylVpJFW32CUh4pCaTCTzDEHxE4hr6xEzj7MszL9da1tZb1iFhAsvZxtmTjhNCichkJ/dX7Ae3oFXwsHfcRluxS7iL1tOsi20sb2wqb4KECSwZAwNHUhwROUqtRqtWq6FU9Cd+AyPmF7XoXnSOAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Pie chart showing contributions to Gun by Author. Mark Nadal leads at 64.12%. The next highest contributor with 6.25%"
+        title="Pie chart showing contributions to Gun by Author. Mark Nadal leads at 64.12%. The next highest contributor with 6.25%"
+        src="/static/58d921ce07d920f47f8a00d77fdefd24/fcda8/gun-authors.png"
+        srcset="/static/58d921ce07d920f47f8a00d77fdefd24/12f09/gun-authors.png 148w,
+/static/58d921ce07d920f47f8a00d77fdefd24/e4a3f/gun-authors.png 295w,
+/static/58d921ce07d920f47f8a00d77fdefd24/fcda8/gun-authors.png 590w,
+/static/58d921ce07d920f47f8a00d77fdefd24/efc66/gun-authors.png 885w,
+/static/58d921ce07d920f47f8a00d77fdefd24/0f67e/gun-authors.png 921w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>Contrast this with a project like OrbitDb.</p>
-<p><img src="./orbit-db-authors.png" alt="Pie chart showing contributions to OrbitDb by Author. shamb0t leads at 26.17%. Next highest contributor at 17.76%. Third at 14.02%. Fourth at 8.41%. Fifth at 4.62%"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/5f006f7b9dd619bbc9220cfb10b38a2a/d9199/orbit-db-authors.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 76.35135135135135%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAIAAABr+ngCAAAACXBIWXMAAA7DAAAOwwHHb6hkAAADIElEQVQoz2Pg4ebh5eFl5+Bl5ubxjg4wi0qZOnmWV3aSqKKciJAQFzcI8PLy8vDwcMMADwww8PHxsrNy2mhwZWT6ZOxYGr5w8faTtwK6Kg1trGwsrTQ1NYWARnBx8fHxCQgK8oMB3BQGXg52RgXdnNb+RwsMIidUpS9dnDJ9tXlutLmxqZW1ta2trbGxsYCAgISUpLa2tpqamqqqqpycnJiYGNAUBjEOBv8EE8mFR5bPLz44zcV76azsFetts2LMTc2Ami0sLOzs7IBaZKQldHV1tbS0VFRUxMXFhYWFgSYy+LjLvl7HPLtBwGDS0hnTaupnVUxbvM7Tw83M3Nza2toKDMxMTdWVFDU0NYCWA60F+paDgwPk7NqixBd3Fn+45H14jUpSe23VjPnRG2dbenpaWZhb29hYQ4GNhoaKtrYW0HKgfqDLpaSkREVFGWpseO9VGJ/ujLizruDmaqsti+Ld5k40cHG2sbAwAwNTU1Og5VraWhoaGsDwA3obqFNERATk5wYr3ddJrjci7G9G6J5N8z5Tnd7eV57UmFaUXxwTExMbGxsXFxcUFGxoaKCuoa6vrw/0s7S0NFAzyNlF1l4X0utWxffOTVg8I2XisSznvJUGmgcLJ7V2d/V0A0FXV1dvb29QWKisnBzQzZAwU1JSAmn2skhqTzraELtpUX7OtWauPdM4hS+Hsl1Mqe5p6mhtb21ra2lp6evrCw2PUFZRMTAw0NPTA+qXkJAAaVaW1piVXna0TutaB+PjFobIrdYMt9MYbsTGLKzqa+5sbW9rb29vamw0MjZWVVUD2qyoqCgpKQmMJ1AKY2XnaghieDqJ8W49w+KZkmxXYxmvJTDcitXbkwu0GWjthAkT/P39BUWEgRYCw0xZWRnoYWCaA6ZZBmDS5ubh741if9rPYHvQheF6MvPlWIarcawX4ysmNk/unRAVHQW0BKgUGLzwRA5N20AuBzevKA9XWJgwx7EwhscpDPeTGe8nMzxLdpufG+LqyyPAB7EHOUtANYNNBWIeFjYebg1xTg8VThdlIOLwVOHWkOBkZQdlOrCFmAAAKXbqeisxUUIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Pie chart showing contributions to OrbitDb by Author. shamb0t leads at 26.17%. Next highest contributor at 17.76%. Third at 14.02%. Fourth at 8.41%. Fifth at 4.62%"
+        title="Pie chart showing contributions to OrbitDb by Author. shamb0t leads at 26.17%. Next highest contributor at 17.76%. Third at 14.02%. Fourth at 8.41%. Fifth at 4.62%"
+        src="/static/5f006f7b9dd619bbc9220cfb10b38a2a/fcda8/orbit-db-authors.png"
+        srcset="/static/5f006f7b9dd619bbc9220cfb10b38a2a/12f09/orbit-db-authors.png 148w,
+/static/5f006f7b9dd619bbc9220cfb10b38a2a/e4a3f/orbit-db-authors.png 295w,
+/static/5f006f7b9dd619bbc9220cfb10b38a2a/fcda8/orbit-db-authors.png 590w,
+/static/5f006f7b9dd619bbc9220cfb10b38a2a/efc66/orbit-db-authors.png 885w,
+/static/5f006f7b9dd619bbc9220cfb10b38a2a/d9199/orbit-db-authors.png 960w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>amark does the most contribution… and even more scary, he’s probably one of the few people in the planet that actually understands the code he wrote.</p>
 <h3>The Disease</h3>
 <p>Gun suffers from a (hopefully not terminal) case of <a href="https://en.wikipedia.org/wiki/Not_invented_here">NIH syndrome</a>. Every problem in the world <em>must be solved by Gun</em> (See freeism).</p>
@@ -124,7 +184,36 @@ arbitrarily is nowhere prominent in the documentation.</p>
 <h4>The Ecosystem</h4>
 <p>The realtime P2P database problem that Gun is currently trying to solve is <em>very hard</em>. No one has really solved it sucessfully yet.
 But for <em>some reason</em>, that’s not enough. They’re creating an an entire “new internet” ecosystem. One Nation Under Gun.</p>
-<p><img src="./ecosystem.jpg" alt="The GUN Ecosystem"></p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/6764e58ab805e0bc08be493445e94dd9/f537d/ecosystem.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 31.756756756756754%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAGABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAAEE/9oADAMBAAIQAxAAAAHLJooH/8QAFxABAQEBAAAAAAAAAAAAAAAAAQARIf/aAAgBAQABBQLkZIX/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAVEAEBAAAAAAAAAAAAAAAAAAAAMf/aAAgBAQAGPwKIj//EABkQAAIDAQAAAAAAAAAAAAAAAAARATGRUf/aAAgBAQABPyFLTCLy4XwZph//2gAMAwEAAgADAAAAEHAP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QiP/EABkQAQEBAAMAAAAAAAAAAAAAAAERAEFxkf/aAAgBAQABPxARrTpmUBfDBg8m/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="The GUN Ecosystem"
+        title="The GUN Ecosystem"
+        src="/static/6764e58ab805e0bc08be493445e94dd9/1c72d/ecosystem.jpg"
+        srcset="/static/6764e58ab805e0bc08be493445e94dd9/a80bd/ecosystem.jpg 148w,
+/static/6764e58ab805e0bc08be493445e94dd9/1c91a/ecosystem.jpg 295w,
+/static/6764e58ab805e0bc08be493445e94dd9/1c72d/ecosystem.jpg 590w,
+/static/6764e58ab805e0bc08be493445e94dd9/f537d/ecosystem.jpg 854w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+      />
+  </a>
+    </span></p>
 <p>The Network and Routing “layers” in this ecosystem are <em>insanely difficult</em> problems on their own. Gun is 0.001% of the way on those fronts. Seeing how little they progressed in the database portion of the ecosystem in the 3 years I have watched them, I don’t see how anyone would have the confidence that this is a realistic objective.</p>
 <p>P2P Networking and Routing is already being solved by different projects. Some of them <em>in production</em>! I don’t understand the obsession with Inventing Here when you could collaborate with existing projects that are already solving the problem:</p>
 <ul>
