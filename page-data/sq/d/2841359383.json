@@ -1,0 +1,11 @@
+{
+  "data": {
+    "site": {
+      "siteMetadata": {
+        "title": "Wesley Lima",
+        "description": "A starter blog demonstrating what Gatsby can do.",
+        "social": { "twitter": "" }
+      }
+    }
+  }
+}
