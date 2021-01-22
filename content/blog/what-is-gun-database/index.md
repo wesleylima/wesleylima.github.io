@@ -34,7 +34,8 @@ Gun people often explain the project as "an open source Firebase!"
  
 No. It absolutely is not like firebase. The provided API is very obtuse and poorly documented.
 
-Gun also has no real ACL layer. Their official soultion is to encrypt object using their "SEA" security library. Except that by doing that, you either have to use their very clunky Gun user system, or roll your own access control in your application.
+Gun also has no real ACL layer. Their official soultion is to encrypt objects using their "SEA" security library. Except that by doing that, you either have to use their very clunky Gun user system, or roll your own access control in your application.
+
 Out of the box--no matter what they claim-- gundoesn't support selectively sharing user data. With gun either something is public to all, or accessible only to the user that created it. _This is not stated in the documentation_.
 
 Newcomers often ask: "Can gun do _x_?" And the Gun answer is without exception: "Yes". They do leave out the part where it's not actually Gun that's doing "x". It's you that are going to have to write that feature on top of Gun.
