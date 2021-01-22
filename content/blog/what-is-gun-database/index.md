@@ -7,7 +7,7 @@ description: Cybernakeoil database and social networking protocol.
 # Why Did I Write This
 I've been working on a version of this post for 3 months, but now that Gun is getting more [mainstream attention](https://mobile.twitter.com/jack/status/1352442460127936512), I feel like a third party perspective on Gun and its problems is necessary.
 
-![Gun Will Fire With Magazine Removed](./gun_will_fire.png)
+![Gun Will Fire With Magazine Removed](./gun_will_fire.jpg)
 
 # The Good
 
