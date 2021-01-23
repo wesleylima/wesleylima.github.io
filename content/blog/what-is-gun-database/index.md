@@ -1,7 +1,7 @@
 ---
-title: Gun Database Is Not Good
+title: The Wrong End of a GUN
 date: "2021-01-22T22:00:00.00Z"
-description: Cybernakeoil database and social networking protocol
+description: Cyber-Snakeoil database protocol
 ---
 
 [Gun](https://gun.eco/) (Photosensitive Warning: Obnoxious neon colors as background) is getting more [mainstream attention](https://mobile.twitter.com/jack/status/1352442460127936512), I'll weight this projects advantages against its drawbacks.
@@ -26,7 +26,7 @@ But Gun fails in the execution.
 ## Misleading Claims and Bad Expectation Management
 
 ### Performance
-Gun makes some outrageous performan comparisons against "real" databases. But as you'll come to see, comparring gun with "real" databases is laughable. Passing around unecrypted, unsigned, unindexed data with no ACL is actually very computationally easy. Their "conflict resolution algorithm" that syncs data is a lexical comparison. Gun is missing _lots_ of featuers that "real" databases provide. Without these feature, their performance "metrics" don't mean anything.
+Gun makes some [outrageous performance comparisons](https://news.ycombinator.com/item?id=13249469) against "real" databases. But as you'll come to see, comparring gun with "real" databases is laughable. Passing around unecrypted, unsigned, unindexed data with no ACL is actually very computationally easy. Their "conflict resolution algorithm" that syncs data is a lexical comparison. Gun is missing _lots_ of featuers that "real" databases provide. Without these feature, their performance "metrics" don't mean anything.
 
 ### Ease of Use
 Gun people often explain the project as "an open source Firebase!"
@@ -91,7 +91,7 @@ I did mention the community in "The Good" section. Yes they're very friendly to 
 
 Most community knowledge is siloed in their Discord. Although this is not a unique problem to Gun, it's especially bad here because the official documentation is seldom updated.
 
-While the community superficially friendly the founder himself is very unreceptive to criticsm. I'm not the first person to raise some of these concerns. An active member of the community though it be important to add a "disclaimer" as to the suitability of the project. The pull request he made to the documentation with these "caveats" went unmerged for months. When he asked for it to be reviewed or even discussed--he was berated for "feeling entited" to the founder's time and then subsequently banished from the community.
+While the community superficially friendly the founder himself is very unreceptive to criticsm. I'm not the first person to raise some of these concerns. An active member of the community though it be important to (add a "disclaimer")[https://gitter.im/amark/gun?at=5e13d202e52f6353789762d4] as to the suitability of the project. The pull request he made to the documentation with these "caveats" went unmerged for months. When he asked for it to be reviewed or even discussed--he was berated for "feeling entited" to the founder's time and then subsequently banished from the community.
 
 Note, this was a very normal type of disclaimer for software at this stage. It is _extremely_ informative to developers. Contrast Gun's exhuberant marketability implications with Orbit's disclaimer:
 
@@ -103,7 +103,7 @@ From (https://github.com/orbitdb/orbit-db)
 
 ## Project sustainability
 ### The Code
-The code is... It's mathemagical spaghetti. It's full of micro-optimizations that make the source code illegible. Gun's author explains this away as coding style or preference. He's approaching things like a Mathmatician! But even mathematicians try to use common symbols for clarity!
+The code is... It's mathemagical spaghetti. It's full of micro-optimizations that make the source code illegible. Gun's author explains this away as (coding style)[https://news.ycombinator.com/item?id=10683467]. He's approaching things like a Mathmatician! But even mathematicians try to use common symbols for clarity!
 
 Not in Gun though. We have only do obtusely named names here
 
@@ -207,7 +207,7 @@ If you want to be in the cutting edge, be ready to bleed.
 There are better supported P2P ecosystems and platforms that will tell you the truth about current capabilities.
 
 ## Is Orbit Any Better?
-As a tool for creating real apps today? Not really. Neither is "production ready". But one of them lies to you and tells you it is.
+As a tool for creating real apps today? Not really. Neither is "production ready". But one of them lies to you.
 
 But if you were to ask: "which one has the better chance at being a usable P2P database for real applications?" No question Orbit.
 
@@ -218,14 +218,3 @@ This might be tangential enough for an entire blog post. Stay tuned.
 
 
 Spoiler alert: Freeism also is based on Gun
-
-
-# References
-* https://news.ycombinator.com/item?id=10683467
-* https://news.ycombinator.com/item?id=13249552
-* https://gitter.im/amark/gun?at=5e13d202e52f6353789762d4
-* https://github.com/amark/gun/pull/854
-* https://github.com/skiqh/gun-cli/tree/b52895b89d1e21004c009682c3766e7a9d1cda5f
-
-
-
