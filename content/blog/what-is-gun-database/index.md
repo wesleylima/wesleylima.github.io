@@ -1,11 +1,10 @@
 ---
-title: What Is Gun Database?
+title: Gun Database Is Not Good
 date: "2021-01-22T22:00:00.00Z"
-description: Cybernakeoil database and social networking protocol.
+description: Cybernakeoil database and social networking protocol
 ---
 
-# Why Did I Write This
-I've been working on a version of this post for 3 months, but now that Gun is getting more [mainstream attention](https://mobile.twitter.com/jack/status/1352442460127936512), I feel like a third party perspective on Gun and its problems is necessary.
+[Gun](https://gun.eco/) (Photosensitive Warning: Obnoxious neon colors as background) is getting more [mainstream attention](https://mobile.twitter.com/jack/status/1352442460127936512), I'll weight this projects advantages against its drawbacks.
 
 ![Gun Will Fire With Magazine Removed](./gun_will_fire.jpg)
 
@@ -61,7 +60,7 @@ Why do they leave out such critical information for developers? Or use maybe use
 
 Unless you implement "server-side" filtering (yes this serverless peer-to-peer protocol has servers…) through a non-core package, anybody can write anything to any "non special" node on graph. Documentation leaves this detail out.
 
-In fact, under the ideal "universal graph", a non-SEA node can't practically exist. But not only does documentation not explain this, all their examples are _fundamentally incompatible_ with how Gun would be used in the real world.
+In fact, under the ideal "universal graph", a non-SEA node (not encrypted, not signed) can't practically exist. But not only does documentation not explain this, all their examples are _fundamentally incompatible_ with how Gun would be used in the real world.
 
 There is no "official" way to use Gun in the Universal graph. Just some low level, buggy APIs for signing and encrypting. It's buggy now, but Gun knows about and they're working on it! They've been working on this basic funcitonality for over 3 years. Yet they continue to imply Gun as fully featured and production-ready.
 
