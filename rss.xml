@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Wesley Lima]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://www.wesleylima.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 22 Jan 2021 22:59:03 GMT</lastBuildDate><item><title><![CDATA[What Is Gun Database?]]></title><description><![CDATA[Why Did I Write This I’ve been working on a version of this post for 3 months, but now that Gun is getting more mainstream attention, I feel…]]></description><link>https://www.wesleylima.com/what-is-gun-database/</link><guid isPermaLink="false">https://www.wesleylima.com/what-is-gun-database/</guid><pubDate>Fri, 22 Jan 2021 22:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Why Did I Write This&lt;/h1&gt;
-&lt;p&gt;I’ve been working on a version of this post for 3 months, but now that Gun is getting more &lt;a href=&quot;https://mobile.twitter.com/jack/status/1352442460127936512&quot;&gt;mainstream attention&lt;/a&gt;, I feel like a third party perspective on Gun and its problems is necessary.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Wesley Lima]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://www.wesleylima.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 23 Jan 2021 00:35:41 GMT</lastBuildDate><item><title><![CDATA[Gun Database Is Not Good]]></title><description><![CDATA[Gun (Photosensitive Warning: Obnoxious neon colors as background) is getting more mainstream attention, I’ll weight this projects advantages…]]></description><link>https://www.wesleylima.com/what-is-gun-database/</link><guid isPermaLink="false">https://www.wesleylima.com/what-is-gun-database/</guid><pubDate>Fri, 22 Jan 2021 22:00:00 GMT</pubDate><content:encoded>&lt;p&gt;&lt;a href=&quot;https://gun.eco/&quot;&gt;Gun&lt;/a&gt; (Photosensitive Warning: Obnoxious neon colors as background) is getting more &lt;a href=&quot;https://mobile.twitter.com/jack/status/1352442460127936512&quot;&gt;mainstream attention&lt;/a&gt;, I’ll weight this projects advantages against its drawbacks.&lt;/p&gt;
 &lt;p&gt;&lt;span
       class=&quot;gatsby-resp-image-wrapper&quot;
       style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
@@ -46,7 +45,7 @@
 &lt;p&gt;Gun people often explain the project as “an open source Firebase!”&lt;/p&gt;
 &lt;p&gt;No. It absolutely is not like firebase. The provided API is very obtuse and poorly documented.&lt;/p&gt;
 &lt;p&gt;Gun also has no real ACL layer. Their official soultion is to encrypt objects using their “SEA” security library. Except that by doing that, you either have to use their very clunky Gun user system, or roll your own access control in your application.&lt;/p&gt;
-&lt;p&gt;Out of the box—no matter what they claim— gundoesn’t support selectively sharing user data. With gun either something is public to all, or accessible only to the user that created it. &lt;em&gt;This is not stated in the documentation&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Out of the box—no matter what they claim— Gun doesn’t support selectively sharing user data. With gun either something is public to all, or accessible only to the user that created it. &lt;em&gt;This is not stated in the documentation&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;Newcomers often ask: “Can gun do &lt;em&gt;x&lt;/em&gt;?” And the Gun answer is without exception: “Yes”. They do leave out the part where it’s not actually Gun that’s doing “x”. It’s you that are going to have to write that feature on top of Gun.&lt;/p&gt;
 &lt;p&gt;Yes, you can write your own key sharing mechanism using their security library. But that’s &lt;em&gt;you&lt;/em&gt; writing the ACL library, not Gun providing it.&lt;/p&gt;
 &lt;p&gt;Also, now that you’re signing/verifying and encrypting/decrypting every node of data, the &lt;em&gt;ultra fast&lt;/em&gt; advertised performance starts making your data load like it’s coming off a 2002 DSL connection.&lt;/p&gt;
@@ -59,7 +58,7 @@ gun.get(&amp;#39;something&amp;#39;).get(&amp;#39;not&amp;#39;).get(&amp;#39;exi
 arbitrarily is nowhere prominent in the documentation.&lt;/p&gt;
 &lt;p&gt;Why do they leave out such critical information for developers? Or use maybe use a realistic, access-controlled or encrypted/signed example? My guess is that it’s because it detracts from the “simple” brand they’re trying to hard to cultivate.&lt;/p&gt;
 &lt;p&gt;Unless you implement “server-side” filtering (yes this serverless peer-to-peer protocol has servers…) through a non-core package, anybody can write anything to any “non special” node on graph. Documentation leaves this detail out.&lt;/p&gt;
-&lt;p&gt;In fact, under the ideal “universal graph”, a non-SEA node can’t practically exist. But not only does documentation not explain this, all their examples are &lt;em&gt;fundamentally incompatible&lt;/em&gt; with how Gun would be used in the real world.&lt;/p&gt;
+&lt;p&gt;In fact, under the ideal “universal graph”, a non-SEA node (not encrypted, not signed) can’t practically exist. But not only does documentation not explain this, all their examples are &lt;em&gt;fundamentally incompatible&lt;/em&gt; with how Gun would be used in the real world.&lt;/p&gt;
 &lt;p&gt;There is no “official” way to use Gun in the Universal graph. Just some low level, buggy APIs for signing and encrypting. It’s buggy now, but Gun knows about and they’re working on it! They’ve been working on this basic funcitonality for over 3 years. Yet they continue to imply Gun as fully featured and production-ready.&lt;/p&gt;
 &lt;h2&gt;Baffling Tradeoff Choices&lt;/h2&gt;
 &lt;h4&gt;User&lt;/h4&gt;
@@ -226,7 +225,7 @@ But for &lt;em&gt;some reason&lt;/em&gt;, that’s not enough. They’re creatin
 &lt;h3&gt;Overreliance of “The Community”&lt;/h3&gt;
 &lt;p&gt;See “Free Software Isn’t Free”.
 No successful, sustainable FOSS project runs off vounteerism only. I believe there are only two full time developers working for Gun. And of those two, one is the founder who splits his development time with CEO duties, community management, sales and evangelism. This is obviously not sustainable. &lt;em&gt;Especially&lt;/em&gt; with a developer-unfriendy codebase as Gun’s&lt;/p&gt;
-&lt;p&gt;Even basic conventions on how to implement private groups hasn’t been established. They’re still “waiting on the community” to provide a solutionl.&lt;/p&gt;
+&lt;p&gt;Even basic conventions like how to implement private groups hasn’t been established. They’re still “waiting on the community” to provide a solution.&lt;/p&gt;
 &lt;h3&gt;Documentation&lt;/h3&gt;
 &lt;p&gt;Only the most basic examples are documented. The actual complexity of writing a P2P application with this library is intentionally obfuscated. More complex questions are only answered in “explainer videos” that don’t actually answer the question or refer to aspirational functionality instead of showing real code and real use of the library.&lt;/p&gt;
 &lt;p&gt;And then there’s the horribly unprofessional unfinished documentation. This has been this way for years.&lt;/p&gt;
@@ -266,8 +265,8 @@ No successful, sustainable FOSS project runs off vounteerism only. I believe the
 &lt;p&gt;If you want to be in the cutting edge, be ready to bleed.&lt;/p&gt;
 &lt;p&gt;There are better supported P2P ecosystems and platforms that will tell you the truth about current capabilities.&lt;/p&gt;
 &lt;h2&gt;Is Orbit Any Better?&lt;/h2&gt;
-&lt;p&gt;As a tool for creating real apps today? Not really. Neither is “production ready”. But one of them lies to you and tells you it is.
-However, which one has the better chance at being a usable P2P database for real applications? No question Orbit.&lt;/p&gt;
+&lt;p&gt;As a tool for creating real apps today? Not really. Neither is “production ready”. But one of them lies to you and tells you it is.&lt;/p&gt;
+&lt;p&gt;But if you were to ask: “which one has the better chance at being a usable P2P database for real applications?” No question Orbit.&lt;/p&gt;
 &lt;h3&gt;Apendix: Freeism and the Cult of Mark&lt;/h3&gt;
 &lt;p&gt;In addition to coding P2P database, Gun’s founder also uses the Gun Discord to evangelize a new political phylosophy of his invention: &lt;em&gt;Freeism&lt;/em&gt;.
 This might be tangential enough for an entire blog post. Stay tuned.&lt;/p&gt;
