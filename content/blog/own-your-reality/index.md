@@ -5,21 +5,17 @@ description: Augmented Reality is the last stand for human self determination.
 ---
 
 ## What is AR
-AR is the penultimate computing interface. It's an advancement so profound it will only be superceded by a direct mind machine interface.
+Augmented Reality is the the next to last computing medium. It's an advancement so profound that it will only be superceded by direct mind-machine interface.
 
-While it won't be the last medium--direct mind-machine interfaces are the apex--the leap from smartphones to AR will be the most disruptive and revolutionary ever. It fully replace every medium before it. And it will deeply, literally and irreversibly change the nature of reality itself.
+The leap from smartphones to AR will be the most disruptive and revolutionary ever. It eventually fully replace every medium before it. Every page, screen or key will be fully and more flexibly expressed in Augmented Reality. And it will deeply, literally and irreversibly change the nature of reality itself.
 
-Every medium since we first created media has been exploited to influence behavior and warp perception in ways that benefit the medium"owner" with no regard --and often to the detriment -- of the target. This is really just a cute way of saying advertisement and propaganda (the same word in Portuguese). I will call it all propaganda.
-As the medium becomes more sophisticated so does the power of propaganda to shape behavior. We know it works because people spend money on it.
+Every medium since has been exploited to influence behavior and warp perception. This is done to the benefit of the medium "owner". When the user doesn't "own" the devices they bear, this will come at the expense of the user. Warping of reality is propaganda.
 
-Devices become extensions of our selves. This reaches an apex with AR.
+As the medium becomes more sophisticated so does the power of propaganda to shape behavior. 
 
-Smartphones already alter human behavior. AR can alter human behavior more powerfully than smartphones by at least a factor of 10
-Literally shaping your paradigm at a whim
+Devices become extensions of our selves and how we see the world. This reaches an apex with AR.
 
-Software on AR computers must BELONG to the user or else we will become slaves to the true owners
+Smartphones already alter human behavior. AR will alter human behavior more powerfully than smartphones by at least a factor of 10.
+Whoever owns AR will be able to literally shape reality for millions.
 
-# Current State
-Palm Pilot - 1997
-iPhone - 2007
-
+Thus, software on AR computers _must belong_ to the user. If not, users will completely subservient to the true owners.
