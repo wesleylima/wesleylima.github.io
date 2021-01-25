@@ -91,7 +91,7 @@ I did mention the community in "The Good" section. Yes they're very friendly to 
 
 Most community knowledge is siloed in their Discord. Although this is not a unique problem to Gun, it's especially bad here because the official documentation is seldom updated.
 
-While the community superficially friendly the founder himself is very unreceptive to criticsm. I'm not the first person to raise some of these concerns. An active member of the community though it be important to (add a "disclaimer")[https://gitter.im/amark/gun?at=5e13d202e52f6353789762d4] as to the suitability of the project. The pull request he made to the documentation with these "caveats" went unmerged for months. When he asked for it to be reviewed or even discussed--he was berated for "feeling entited" to the founder's time and then subsequently banished from the community.
+While the community superficially friendly the founder himself is very unreceptive to criticsm. I'm not the first person to raise some of these concerns. An active member of the community though it be important to [add a "disclaimer"](https://gitter.im/amark/gun?at=5e13d202e52f6353789762d4) as to the suitability of the project. The pull request he made to the documentation with these "caveats" went unmerged for months. When he asked for it to be reviewed or even discussed--he was berated for "feeling entited" to the founder's time and then subsequently banished from the community.
 
 Note, this was a very normal type of disclaimer for software at this stage. It is _extremely_ informative to developers. Contrast Gun's exhuberant marketability implications with Orbit's disclaimer:
 
@@ -103,7 +103,7 @@ From (https://github.com/orbitdb/orbit-db)
 
 ## Project sustainability
 ### The Code
-The code is... It's mathemagical spaghetti. It's full of micro-optimizations that make the source code illegible. Gun's author explains this away as (coding style)[https://news.ycombinator.com/item?id=10683467]. He's approaching things like a Mathmatician! But even mathematicians try to use common symbols for clarity!
+The code is... It's mathemagical spaghetti. It's full of micro-optimizations that make the source code illegible. Gun's author explains this away as [coding style](https://news.ycombinator.com/item?id=10683467). He's approaching things like a Mathmatician! But even mathematicians try to use common symbols for clarity!
 
 Not in Gun though. We have only do obtusely named names here
 
